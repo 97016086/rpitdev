@@ -1,14 +1,7 @@
 @extends('layout.layout')
 
 <head>
-  <title>Home</title>
+  <title>About me</title>
 </head>
 
-
 <x-navbar />
-
-
-
-
-
-
