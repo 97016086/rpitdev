@@ -7,6 +7,9 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
+    fontFamily: {
+      'poppins': ['Poppins'],
+    },
     extend: {},
   },
   plugins: [],
