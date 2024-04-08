@@ -10,7 +10,7 @@
 
 <body>
 <div class="w-full	text-gray-700 bg-slate-300	dark:text-white	dark:bg-sky-900" >
-	<div	x-data="{	open:	false	}"	 class="flex flex-col  px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+	<div	x-data="{	open:	false	}"	 class="flex flex-col  px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 py-1">
 		<div class="p-4	flex	flex-rowitems-center	justify-between">
 			<x-theme-toggle	/>
 			<button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">

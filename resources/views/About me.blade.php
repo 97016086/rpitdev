@@ -4,4 +4,3 @@
   <title>About me</title>
 </head>
 
-<x-navbar />

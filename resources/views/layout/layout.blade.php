@@ -11,8 +11,13 @@
 
 
 <body body x-cloak x-data="{darkMode:  false}" :class="{'dark':  darkMode  === true}" class="antialiased "class="container mx-auto mt-10 mb-10 max-w-3xl ">
- 
+  <x-navbar />
+<main>
+  
+</main>
 
+
+  <x-footer />
 
   @yield('content')
 </body>
