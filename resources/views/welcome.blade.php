@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       @vite('resources/css/app.css')
     <title>Document</title>
+    <script>
+      if (
+        localStorage.getItem('color-theme') === 'dark'  ||
+        (!('color-theme'  in localStorage)  &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else  {
+        document.documentElement.classlist.remove('dark');
+      }
+    </script>
   </head>
   <body>
     <div class="max-w-md  m-24 rounded overflow-hidden shadow-lg">
@@ -21,5 +32,6 @@
         </button>
       </div>
     </div>
+    <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
   </body>
 </html>

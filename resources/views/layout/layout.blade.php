@@ -6,18 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title')</title>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+ 
+<script>
+  
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
 </head>
 
 
 
-<body body x-cloak x-data="{darkMode:  false}" :class="{'dark':  darkMode  === true}" class="antialiased "class="container mx-auto mt-10 mb-10 max-w-3xl ">
-  <x-navbar />
+<body>
+<x-navbar />
 <main>
-  
+
 </main>
 
-
+<x-contect />
   <x-footer />
 
-  @yield('content')
 </body>
